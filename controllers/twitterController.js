@@ -26,7 +26,7 @@ var recent = function(req,res){
       null,
       'HMAC-SHA1'
   )
-  twitter.getRecent(req.params.param, myOauth, function(data) {
+  twitter.getRecent(myOauth, function(data) {
     res.send(data);
   })
 }

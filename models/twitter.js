@@ -15,7 +15,7 @@ var search=function(param,oauth,cb){
 }
 var getRecent = function(oauth,cb){
   oauth.get(
-    'https://api.twitter.com/1.1/trends/user_timeline.json',
+    'https://api.twitter.com/1.1/statuses/user_timeline.json',
     process.env.ACCESS_TOKEN,
     process.env.ACCESS_SECRET,
     function (e,data,res){
